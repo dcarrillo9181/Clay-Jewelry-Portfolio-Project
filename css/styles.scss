@@ -4,15 +4,17 @@ $color-headers: #524275;
 $color-header2: #2e076d;
 $color-button: #a686b9;
 $color-button-text: #d9d4ec;
+$color-hover: rgb(182, 86, 150);
+$color-border: #6a637a85;
 
 $body-font: "Open Sans", sans-serif;
-$small-headers-font: "Roboto Condensed", cursive;
-$header-font: "Dancing Script", cursive;
+$small-headers-font: "Roboto Condensed", sans-serif;
+$header-font: "Dancing Script", sans-serif;
 
 
 body {
     font-family: $body-font;
-    background: #dde2e2;
+    background: #f7f7f7;
 }
 
 h1 {
@@ -30,12 +32,12 @@ h2, h3 {
 header h1 {
     color: black;
 }
-header h2 {
+
+.faq, header h2 {
     color: $color-header2;
 }
 
 .site-footer{
-    background-image: linear-gradient($color-primary, white);
     padding: 20px 0;
 }
 
@@ -48,8 +50,8 @@ header h2 {
 
 .row-content {
     padding: 50px 0;
-    border-bottom: 1px ridge;
     min-height: 200px;
+    border-bottom: 1px solid $color-border;
 }
 
 .navbar {
@@ -79,4 +81,75 @@ a, a:hover {
 
   img.img-fluid {
       box-shadow: 8px 8px 8px #e4d8fd;
+  }
+
+  .card {
+      border: 1px solid $color-border;
+  }
+
+  .icons {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .social {
+      color: $color-header2;
+      background-color: transparent;
+      border-radius: 50%;
+      padding: 0;
+  }
+
+  .social:hover, .site-footer a:hover, .faq:hover {
+    color: $color-hover;
+    transition: color 0.25s;
+  }
+
+  .site-footer h5 {
+      color: $color-header2;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+  }
+
+  .site-footer li {
+    color: $color-header2;
+  }
+
+  .site-footer li, .site-footer a {
+      font-size: 0.9rem;
+  }
+
+  .card-header {
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.336);
+  }
+
+  .btn-link {
+     letter-spacing: 1px;
+     font-weight: normal;
+  }
+
+  #about-image {
+      width: 100%;
+  }
+
+  #abt-img-wrapper {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+  }
+
+  @media (max-width: 767.98px) { 
+    #abt-img-wrapper {
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+      }
+  }
+
+  #about-header {
+    font-size:calc(1rem + 2vw);
+    font-family: $header-font;
+    font-weight: lighter;
+  }
+
+  @media (min-width: 992px) { 
+    #about-desc {
+        padding-right: 20%;
+    }
   }
