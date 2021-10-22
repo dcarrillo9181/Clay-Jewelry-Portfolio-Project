@@ -1,5 +1,6 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   background: #f7f7f7; }
 
 h1 {
@@ -11,6 +12,20 @@ h2, h3 {
   font-family: "Roboto Condensed", sans-serif;
   color: #524275;
   font-weight: bold; }
+
+.content-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  letter-spacing: 8px; }
+
+.content-title::after {
+  content: "";
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: #524275; }
 
 header h1 {
   color: black; }
@@ -33,11 +48,38 @@ header h1 {
   border-bottom: 1px solid #6a637a85; }
 
 .navbar {
-  background-color: #d6cddb; }
+  color: #2e076d;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(66, 55, 78, 0.39); }
+
+.navbar .social {
+  font-size: 1.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px rgba(66, 55, 78, 0); }
+
+.navbar .social:hover {
+  box-shadow: 0px 0px 3px rgba(66, 55, 78, 0.75);
+  transition: box-shadow 0.15s; }
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none; }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block; }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0; } }
 
 .btn-clay-lite {
   background-color: #a686b9;
-  color: #d9d4ec; }
+  color: white; }
+
+.btn-clay-lite:hover {
+  color: white;
+  background-color: #c59ec9; }
 
 a, a:hover {
   color: inherit;
@@ -73,8 +115,13 @@ img.img-fluid {
   color: #b65696;
   transition: color 0.25s; }
 
+.site-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; }
+
 .site-footer h5 {
   color: #2e076d;
+  font-weight: 400;
   font-size: 0.9rem;
   letter-spacing: 2px; }
 
@@ -82,10 +129,15 @@ img.img-fluid {
   color: #2e076d; }
 
 .site-footer li, .site-footer a {
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  font-weight: 300; }
+
+.site-footer i {
+  width: 1.5rem;
+  margin-left: -4px; }
 
 .card-header {
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.336); }
+  box-shadow: 0px 2px 3px rgba(66, 55, 78, 0.39); }
 
 .btn-link {
   letter-spacing: 1px;
@@ -109,3 +161,6 @@ img.img-fluid {
 @media (min-width: 992px) {
   #about-desc {
     padding-right: 20%; } }
+
+.collections .card {
+  box-shadow: 0px 3px 5px rgba(66, 55, 78, 0.39); }

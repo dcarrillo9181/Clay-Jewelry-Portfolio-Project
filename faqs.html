@@ -12,9 +12,10 @@
             <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
             <link rel="stylesheet" href="css/styles.css" />
         <!-- endbuild -->
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" />
-            <link rel="stylesheet" href="css/main.css" />
             
         <title>Clay by Zuly</title>
     </head>
@@ -36,27 +37,38 @@
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-light sticky-top">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.JPG" height="40" width="40" /></a>
-        <a class="btn btn-social-icon btn-instagram" target="_blank" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-        <a style="margin-left: 3px;" class="btn btn-social-icon btn-facebook" target="_blank" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#clayNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="clayNavbar">
+      <div class="container">
+          <a class="btn social" target="_blank" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a class="btn social" target="_blank" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#clayNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="clayNavbar">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
                   <li class="nav-item"><a class="nav-link" href="aboutme.html"> About me</a></li>
-                  <li class="nav-item"><a class="nav-link" href="collections.html"> Collections</a></li>
-                  <li class="nav-item active"><a class="nav-link" href="#"> FAQ's</a></li>
+                  <li class="nav-item dropdown">	
+                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Collections</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="collections.html"> All</a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item active"><a class="nav-link" href="faqs.html"> FAQs</a></li>
               </ul>
           </div>
-        </div>
-    </nav>
+          <a class="btn social" target="_blank" href="#"><i class="fa fa-shopping-cart"></i></a>
+      </div>
+  </nav>
 
     
 
     <div class="container">
-        <div class="row row-content">
+      <h2 class="content-title text-uppercase mt-4 text-center">faqs</h2>
+        <div class="row row-content pt-4">
+            
             <div class="col-md-12 mx-auto px-0">
                 <div class="accordion" id="accordionExample">
                     <div class="card">
@@ -155,7 +167,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutme.html">About me</a></li>
                         <li><a href="collections.html">Collections</a></li>
-                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="faqs.html">FAQ's</a></li>
                     </ul>
                 </div>
                 <div class="col-3 pr-0">
